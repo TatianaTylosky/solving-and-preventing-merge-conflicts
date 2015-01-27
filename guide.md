@@ -5,14 +5,69 @@
 ###Table of Contents
 
 * Merge Conflicts
-- What are they?
-- Why do they happen?
+  * What are they?
+  * Why do they happen?
 * Prevention by best practices
 * Solving Merge Conflicts
 
 ###Branches
 
-<iframe width='853' height='480' src='https://embed.coggle.it/diagram/54c6e77524ac21761f93372d/0dd513a4489ddf481dd2addd74a04fa54466690e3620c03c22d1dc134fbfd93a' frameborder='0' allowfullscreen></iframe>
+![](http://i.imgur.com/MVh4D2I.png)
 
+In a perfect world, everyone is working on different lines of code in
+the preview or develop branch but sometimes...
 
+![](http://i.imgur.com/vCkvoEo.png)
 
+###2 Things must occur in order for a merge conflict to happen
+
+1. Someone updated the preview branch by merging new code
+
+2. You also modified the same line of code
+
+Github is NOT smart enough to know which version you want.
+
+###Prevention by using Best Practices
+
+1. Pull/fork before you start working
+
+2. Name your branches properly
+
+3. Push to develop/preview not master
+
+4. Merge early and often
+
+5. Don't panic
+
+### How to make good pull requests
+
+1. Communicate with the course lead so they know you are about to start
+   working.
+
+2. Fork repository to your personal github
+
+3. Use git clone and copy paste the SSH URL. Notice you are cloning whatever branch you are currently on in github. Default is master which is good. For ex <code>git clone git@github.com:TatianaTylosky/amaze-curric.git</code>
+
+4. Create new branch and name somewhat appropriately. For ex <code>git checkout -B
+   tati-edits</code>
+
+5. Edit/update - NOTE: If you need to make changes to file name you need
+   to make sure all other pull request have been merge.
+
+6. Do <code>git status</code> in order to <code>git add
+   <name-of-edited-file></code> the files you modified. Then do <code>git commit
+-m "Fix Typo"</code>.
+
+7. <code>git push origin tati-edits</code>
+
+8. Go to your github to your forked repository and click the green
+   compare and pull request button
+
+9. Compare
+base fork: Thinkful-Ed/curric..
+base: preview
+
+head fork: Tatianatylosky..
+base: master
+
+10. Have your pull request reviewed
