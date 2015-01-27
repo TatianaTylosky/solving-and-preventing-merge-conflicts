@@ -4,16 +4,24 @@
 
 ###Table of Contents
 
+* TF Branches Overview
+  * Curric team
+  * Eng team
 * Merge Conflicts
   * What are they?
   * Why do they happen?
 * Prevention by best practices
 * Solving Merge Conflicts
 
-###TF Curriculum Branches
+###TF Branches
 
+####Curriculum Branches
 ![](http://i.imgur.com/bf4hpLn.png)
 
+####Eng Branches
+![](http://i.imgur.com/AhbtM9X.png)
+
+###What is a Merge Conflict?
 In a perfect world, everyone is working on different lines of code in
 the preview (curric team) or develop (eng team) branch but sometimes...
 
