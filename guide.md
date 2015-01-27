@@ -1,5 +1,4 @@
-#Solving & Preventing Merge Conflicts
-##by [Tatiana Tylosky](https://twitter.com/tatianatylosky)
+##Solving & Preventing Merge Conflicts by [Tatiana Tylosky](https://twitter.com/tatianatylosky)
 
 ![](https://octodex.github.com/images/Professortocat_v2.png)
 
