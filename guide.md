@@ -20,15 +20,24 @@ TF curriculum or code base.
 
 <a name="TFBranches"></a>
 ##TF Branches
-Thinkful's curriculum is set up so that multiple contributors can work on
-separate branches that are then merged together by a course lead.
+Branches are different copies of the same project. They allow multiple
+people to work on a project at the same time! After the work has
+been completed on a branch it is then merged back into the main project
+branch (called "preview" for curriculum and called "develop" for
+engineering). After the **preview** or **develop** branch has been made stable
+a course lead or engineer will merge with the **master** branch.
+
+some-change branch --> 
 
 <a name="curriculumbranches"></a>
 ###Curriculum Branches
+Thinkful's curriculum is set up so that multiple contributors can work on
+separate branches that are then merged together by a course lead.
 ![](http://i.imgur.com/bf4hpLn.png)
 
 <a name="engbranches"></a>
 ###Eng Branches
+Thinkful's code base ??? some comment here?
 ![](http://i.imgur.com/mJu0BdQ.png)
 
 <a name="mergeconflicts"></a>
