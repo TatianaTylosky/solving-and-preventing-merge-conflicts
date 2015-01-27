@@ -2,7 +2,7 @@
 ![](https://octodex.github.com/images/Professortocat_v2.png)
 ##By: [Tatiana Tylosky](https://twitter.com/tatianatylosky)
 
-###Table of Contents
+##Table of Contents
 
 * [TF Branches Overview](#TFBranches)
   * [Curric team](#curriculumbranches)
@@ -11,21 +11,23 @@
   * [What are they?](#whatarethey)
   * [Why do they happen?](#whymergeconflicts)
 * [Prevention by best practices](#prevention)
+  * [Overview](#overview)
+  * [Making a Good Pull Request](#pullrequests)
 * [Solving Merge Conflicts](#solving)
 
 <a name="TFBranches"></a>
-###TF Branches
+##TF Branches
 
 <a name="curriculumbranches"></a>
-####Curriculum Branches
+###Curriculum Branches
 ![](http://i.imgur.com/bf4hpLn.png)
 
 <a name="engbranches"></a>
-####Eng Branches
+###Eng Branches
 ![](http://i.imgur.com/mJu0BdQ.png)
 
 <a name="mergeconflicts"></a>
-###Merge Conflicts
+##Merge Conflicts
 
 <a name="whatarethey"></a>
 ###What is a Merge Conflict?
@@ -45,7 +47,10 @@ the preview (curric team) or develop (eng team) branch but sometimes...
 Github is NOT smart enough to know which version you want.
 
 <a name="prevention"></a>
-###Prevention by using Best Practices
+##Prevention by using Best Practices
+
+<a name="overview"></a>
+###Overview
 
 1. Pull/fork before you start working.
 
@@ -57,6 +62,7 @@ Github is NOT smart enough to know which version you want.
 
 5. Don't panic.
 
+<a name="pullrequests"></a>
 ### How to make good pull requests
 
 1. Communicate with others and let them know what you are working on.
@@ -85,4 +91,4 @@ Github is NOT smart enough to know which version you want.
 10. Have your pull request reviewed
 
 <a name="solving"></a>
-###Solving Merge Conflicts
+##Solving Merge Conflicts
