@@ -18,12 +18,8 @@ The purpose of this overview is to teach you how to make pull requests and solve
 
 <a name="TFBranches"></a>
 ##TF Branches
-Branches are just different copies of the same project. They allow multiple
-people to work on a project at the same time. After the work has
-been completed on a branch it is then merged back into the main project
-branch (called "preview" for curriculum and "develop" for
-engineering). After the **preview** or **develop** branch has been made stable
-a course lead or engineer will merge with the **master** branch.
+Branches are copies of the same project that can exist either on Github
+or locally on your computer. They allow multiple people to work on a project at the same time. After the work has been completed on a branch it is then merged back into the main project branch (called "preview" for curriculum and "develop" for engineering). After the **preview** or **develop** branch has been made stable a course lead or engineer will merge it with the **master** branch.
 
 <a name="curriculumbranches"></a>
 ###Curriculum Branches
@@ -57,7 +53,7 @@ Naming convention:
 ###What is a Merge Conflict?
 
 When Github doesn't know how to merge your updated branch with the main branch
-you will get merge conflicts. Usually this means a project has been
+you will get a merge conflict. Usually this means a project has been
 modified at the same place in the two branches you are trying to merge.
 
 ![](http://i.imgur.com/vCkvoEo.png)
@@ -73,30 +69,32 @@ modified at the same place in the two branches you are trying to merge.
 ***Github is NOT smart enough to know which version you want.***
 
 <a name="prevention"></a>
-##Prevention by using Best Practices
+##Prevention by Best Practices
 
 <a name="pullrequests"></a>
 ### How to make good pull requests
 
 1. Communicate with others and let them know what you are working on.
 
-2. Fork repository to your personal github
+2. Fork the repository to your personal github.
 
-3. Use git clone and copy paste the SSH URL. Notice you are cloning whatever branch you are currently on in github. Default is master which is good. For example, <code>git clone git@github.com:TatianaTylosky/amaze-curric.git</code>
+3. Use git clone and copy paste the SSH URL. You will clone the master branch by defauly.
+  For example, <code>git clone git@github.com:TatianaTylosky/amaze-curric.git</code>
 
-4. Create new branch and name somewhat appropriately. For example, <code>git checkout -B
-   tati-edits</code>
+4. Create a new branch and name it appropriately.
+   For example, <code>git checkout -B tati-edits</code>
 
-5. Make edits/update to this new branch you have created locally. **NOTE: If you need to make changes to file name you need to make sure all other pull request have been merge.**
+5. Locally make edits to this new branch.
+   **NOTE: If you need to make changes to file name you need to make sure all other pull request have been merge.**
 
 6. Do <code>git status</code> in order to see the file you have
    changed. Then use <code>git add
-   name-of-edited-file</code> to the files you modified. Then do <code>git commit -m "Fix Typo"</code>.
+   name-of-edited-file</code> to the files you modified. Then do <code>git commit -m "Informative commit message"</code>.
 
 7. Push your new branch with the changes to your personal github. For
    ex <code>git push origin tati-edits</code>
 
-8. Go to your github to your forked repository and click the green
+8. Go to your github to your personal forked repository and click the green
    compare and pull request button.
 
 9. Compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Tatianatylosky..base: master</code>
