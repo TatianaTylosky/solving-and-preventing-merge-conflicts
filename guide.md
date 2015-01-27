@@ -58,7 +58,7 @@ Naming convention:
 
 When Github doesn't know how to merge your updated branch with the main branch
 you will get merge conflicts. Usually this means a project has been
-modified at the same place on the two branches you are trying to merge.
+modified at the same place in the two branches you are trying to merge.
 
 ![](http://i.imgur.com/vCkvoEo.png)
 
@@ -70,7 +70,7 @@ modified at the same place on the two branches you are trying to merge.
 
 2. AND you modified the **same** line of code that they did.
 
-Github is NOT smart enough to know which version you want.
+***Github is NOT smart enough to know which version you want.***
 
 <a name="prevention"></a>
 ##Prevention by using Best Practices
