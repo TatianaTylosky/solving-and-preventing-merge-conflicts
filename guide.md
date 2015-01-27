@@ -25,18 +25,29 @@ branch (called "preview" for curriculum and "develop" for
 engineering). After the **preview** or **develop** branch has been made stable
 a course lead or engineer will merge with the **master** branch.
 
-Example:
-Fix-typo branch --> preview branch --> master branch
-
 <a name="curriculumbranches"></a>
 ###Curriculum Branches
 Thinkful's curriculum is set up so that multiple contributors can work on
 separate branches that are then merged together by a course lead.
+
+Example:
+Fix-typo branch --> preview branch --> master branch
+
+Naming convention:
+- Ask Zoe
+
 ![](http://i.imgur.com/bf4hpLn.png)
 
 <a name="engbranches"></a>
 ###Eng Branches
 Thinkful's code base ??? some comment here?
+
+Example:
+feature/python-guide branch --> develop branch --> master branch
+
+Naming convention:
+- Ask Kara
+
 ![](http://i.imgur.com/mJu0BdQ.png)
 
 <a name="mergeconflicts"></a>
