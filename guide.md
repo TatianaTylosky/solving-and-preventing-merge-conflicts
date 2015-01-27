@@ -4,8 +4,8 @@
 
 ###Table of Contents
 
-* [TF Branches Overview](#TF Branches)
-  * [Curric team](#Curriculum Branches)
+* [TF Branches Overview](#TFBranches)
+  * [Curric team](#curriculumbranches)
   * Eng team
 * Merge Conflicts
   * What are they?
@@ -13,8 +13,10 @@
 * Prevention by best practices
 * Solving Merge Conflicts
 
+<a name="TFBranches"></a>
 ###TF Branches
 
+<a name="curriculumbranches"></a>
 ####Curriculum Branches
 ![](http://i.imgur.com/bf4hpLn.png)
 
