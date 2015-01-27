@@ -44,8 +44,10 @@ Thinkful's code base ??? some comment here?
 
 <a name="whatarethey"></a>
 ###What is a Merge Conflict?
-In a perfect world, everyone is working on different lines of code in
-the preview (curric team) or develop (eng team) branch but sometimes...
+
+When Github doesn't know how to merge your updated branch with the main branch
+you will get merge conflicts. Usually this means a project has been
+modified at the same place on the two branches you are trying to merge.
 
 ![](http://i.imgur.com/vCkvoEo.png)
 
