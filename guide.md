@@ -1,6 +1,10 @@
 ##Solving & Preventing Merge Conflicts
 <img src="https://octodex.github.com/images/Professortocat_v2.png" width="200" />
 
+The purpose of this overview is to teach those who are less familiar with
+Github how to make pull requests and solve merge conflicts for the
+TF curriculum or code base.
+
 ##Table of Contents
 
 * [TF Branches Overview](#TFBranches)
@@ -16,6 +20,8 @@
 
 <a name="TFBranches"></a>
 ##TF Branches
+Thinkful's curriculum is set up so that multiple contributors can work on
+separate branches that are then merged together by a course lead.
 
 <a name="curriculumbranches"></a>
 ###Curriculum Branches
@@ -92,3 +98,21 @@ Github is NOT smart enough to know which version you want.
 
 <a name="solving"></a>
 ##Solving Merge Conflicts
+
+NOTES
+How to fix
+git pull upsteam master
+add upstream
+git remote add upstream ORIGINAL-MASTER
+git fetch upstream (just fetch not merge)
+git branch -a (to see all branches
+git merge upstream/master
+open text editor
+how to find merge conflicts
+git status
+open file
+search for “HEAD”
+after fixed merge conflicts do git add
+after they all fixed git commit -m “Fix merge conflicts”
+git push origin update-branch-name
+
