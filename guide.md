@@ -19,7 +19,7 @@
 ![](http://i.imgur.com/bf4hpLn.png)
 
 ####Eng Branches
-![](http://i.imgur.com/AhbtM9X.png)
+![](http://i.imgur.com/mJu0BdQ.png)
 
 ###What is a Merge Conflict?
 In a perfect world, everyone is working on different lines of code in
