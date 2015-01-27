@@ -19,11 +19,12 @@ the preview (curric team) or develop (eng team) branch but sometimes...
 
 ![](http://i.imgur.com/vCkvoEo.png)
 
-###2 Things must occur in order for a merge conflict to happen
+###Why do Merge Conflicts Occur?
 
-1. Someone updated the preview branch by merging new code
+1. Someone updated the preview branch by merging new code while you were
+   working on your branch
 
-2. You also modified the same line of code
+2. AND you modified the **same** line of code that they did.
 
 Github is NOT smart enough to know which version you want.
 
