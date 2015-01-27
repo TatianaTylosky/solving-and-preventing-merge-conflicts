@@ -6,12 +6,12 @@
 
 * [TF Branches Overview](#TFBranches)
   * [Curric team](#curriculumbranches)
-  * Eng team
-* Merge Conflicts
-  * What are they?
-  * Why do they happen?
-* Prevention by best practices
-* Solving Merge Conflicts
+  * [Eng team](#engbranches)
+* [Merge Conflicts](#mergeconflicts)
+  * [What are they?](#whatarethey)
+  * [Why do they happen?](#whymergeconflicts)
+* [Prevention by best practices](#prevention)
+* [Solving Merge Conflicts](#solving)
 
 <a name="TFBranches"></a>
 ###TF Branches
@@ -20,15 +20,21 @@
 ####Curriculum Branches
 ![](http://i.imgur.com/bf4hpLn.png)
 
+<a name="engbranches"></a>
 ####Eng Branches
 ![](http://i.imgur.com/mJu0BdQ.png)
 
+<a name="mergeconflicts"></a>
+###Merge Conflicts
+
+<a name="whatarethey"></a>
 ###What is a Merge Conflict?
 In a perfect world, everyone is working on different lines of code in
 the preview (curric team) or develop (eng team) branch but sometimes...
 
 ![](http://i.imgur.com/vCkvoEo.png)
 
+<a name="whymergeconflicts"></a>
 ###Why do Merge Conflicts Occur?
 
 1. Someone updated the preview branch by merging new code while you were
@@ -38,6 +44,7 @@ the preview (curric team) or develop (eng team) branch but sometimes...
 
 Github is NOT smart enough to know which version you want.
 
+<a name="prevention"></a>
 ###Prevention by using Best Practices
 
 1. Pull/fork before you start working.
@@ -76,3 +83,6 @@ Github is NOT smart enough to know which version you want.
 9. Compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Tatianatylosky..base: master</code>
 
 10. Have your pull request reviewed
+
+<a name="solving"></a>
+###Solving Merge Conflicts
