@@ -11,8 +11,8 @@
   * [What are they?](#whatarethey)
   * [Why do they happen?](#whymergeconflicts)
 * [Prevention by best practices](#prevention)
-  * [Overview](#overview)
   * [Making a Good Pull Request](#pullrequests)
+  * [Overview](#overview)
 * [Solving Merge Conflicts](#solving)
 
 <a name="TFBranches"></a>
@@ -49,19 +49,6 @@ Github is NOT smart enough to know which version you want.
 <a name="prevention"></a>
 ##Prevention by using Best Practices
 
-<a name="overview"></a>
-###Overview
-
-1. Pull/fork before you start working.
-
-2. Name your branches properly.
-
-3. Always push to develop/preview not master.
-
-4. Merge early and often.
-
-5. Don't panic.
-
 <a name="pullrequests"></a>
 ### How to make good pull requests
 
@@ -89,6 +76,20 @@ Github is NOT smart enough to know which version you want.
 9. Compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Tatianatylosky..base: master</code>
 
 10. Have your pull request reviewed
+
+<a name="overview"></a>
+###Overview
+
+* Pull/fork before you start working.
+
+* Name your branches properly.
+
+* Always push to develop/preview not master.
+
+* Merge early and often.
+
+* Don't panic.
+
 
 <a name="solving"></a>
 ##Solving Merge Conflicts
