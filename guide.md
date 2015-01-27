@@ -10,12 +10,12 @@
 * Prevention by best practices
 * Solving Merge Conflicts
 
-###Branches
+###TF Curriculum Branches
 
-![](http://i.imgur.com/MVh4D2I.png)
+![](http://i.imgur.com/bf4hpLn.png)
 
 In a perfect world, everyone is working on different lines of code in
-the preview or develop branch but sometimes...
+the preview (curric team) or develop (eng team) branch but sometimes...
 
 ![](http://i.imgur.com/vCkvoEo.png)
 
@@ -29,20 +29,19 @@ Github is NOT smart enough to know which version you want.
 
 ###Prevention by using Best Practices
 
-1. Pull/fork before you start working
+1. Pull/fork before you start working.
 
-2. Name your branches properly
+2. Name your branches properly.
 
-3. Push to develop/preview not master
+3. Always push to develop/preview not master.
 
-4. Merge early and often
+4. Merge early and often.
 
-5. Don't panic
+5. Don't panic.
 
 ### How to make good pull requests
 
-1. Communicate with the course lead so they know you are about to start
-   working.
+1. Communicate with others and let them know what you are working on.
 
 2. Fork repository to your personal github
 
@@ -51,23 +50,19 @@ Github is NOT smart enough to know which version you want.
 4. Create new branch and name somewhat appropriately. For ex <code>git checkout -B
    tati-edits</code>
 
-5. Edit/update - NOTE: If you need to make changes to file name you need
-   to make sure all other pull request have been merge.
+5. Make edits/update to this new branch you have created locally - **NOTE: If you need to make changes to file name you need to make sure all other pull request have been merge.**
 
-6. Do <code>git status</code> in order to <code>git add
-   <name-of-edited-file></code> the files you modified. Then do <code>git commit
--m "Fix Typo"</code>.
+6. Do <code>git status</code> in order to see the file you have
+   changed. Then use <code>git add
+   name-of-edited-file</code> to the files you modified. Then do <code>git commit -m "Fix Typo"</code>.
 
-7. <code>git push origin tati-edits</code>
+7. Push your new branch with the changes to your personal github. For
+   ex <code>git push origin tati-edits</code>
 
 8. Go to your github to your forked repository and click the green
-   compare and pull request button
+   compare and pull request button.
 
-9. Compare
-base fork: Thinkful-Ed/curric..
-base: preview
-
-head fork: Tatianatylosky..
-base: master
+9. Compare <code>base fork: Thinkful-Ed/curric..base: preview</code>
+   <code>head fork: Tatianatylosky..base: master</code>
 
 10. Have your pull request reviewed
