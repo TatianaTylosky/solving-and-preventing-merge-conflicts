@@ -4,8 +4,8 @@
 
 ###Table of Contents
 
-* TF Branches Overview
-  * Curric team
+* [TF Branches Overview](###TF Branches)
+  * [Curric team](####Curriculum Branches)
   * Eng team
 * Merge Conflicts
   * What are they?
