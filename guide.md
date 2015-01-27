@@ -1,6 +1,6 @@
 #Solving & Preventing Merge Conflicts
 ![](https://octodex.github.com/images/Professortocat_v2.png)
-##By: Tatiana Tylosky
+##By: [Tatiana Tylosky](https://twitter.com/tatianatylosky)
 
 ###Table of Contents
 
@@ -45,12 +45,12 @@ Github is NOT smart enough to know which version you want.
 
 2. Fork repository to your personal github
 
-3. Use git clone and copy paste the SSH URL. Notice you are cloning whatever branch you are currently on in github. Default is master which is good. For ex <code>git clone git@github.com:TatianaTylosky/amaze-curric.git</code>
+3. Use git clone and copy paste the SSH URL. Notice you are cloning whatever branch you are currently on in github. Default is master which is good. For example, <code>git clone git@github.com:TatianaTylosky/amaze-curric.git</code>
 
-4. Create new branch and name somewhat appropriately. For ex <code>git checkout -B
+4. Create new branch and name somewhat appropriately. For example, <code>git checkout -B
    tati-edits</code>
 
-5. Make edits/update to this new branch you have created locally - **NOTE: If you need to make changes to file name you need to make sure all other pull request have been merge.**
+5. Make edits/update to this new branch you have created locally. **NOTE: If you need to make changes to file name you need to make sure all other pull request have been merge.**
 
 6. Do <code>git status</code> in order to see the file you have
    changed. Then use <code>git add
@@ -62,7 +62,6 @@ Github is NOT smart enough to know which version you want.
 8. Go to your github to your forked repository and click the green
    compare and pull request button.
 
-9. Compare <code>base fork: Thinkful-Ed/curric..base: preview</code>
-   <code>head fork: Tatianatylosky..base: master</code>
+9. Compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Tatianatylosky..base: master</code>
 
 10. Have your pull request reviewed
