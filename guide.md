@@ -1,9 +1,7 @@
 ##Solving & Preventing Merge Conflicts
 <img src="https://octodex.github.com/images/Professortocat_v2.png" width="200" />
 
-The purpose of this overview is to teach those who are less familiar with
-Github how to make pull requests and solve merge conflicts for the
-TF curriculum or code base.
+The purpose of this overview is to teach you how to make pull requests and solve merge conflicts for the TF curriculum or code base.
 
 ##Table of Contents
 
@@ -20,14 +18,15 @@ TF curriculum or code base.
 
 <a name="TFBranches"></a>
 ##TF Branches
-Branches are different copies of the same project. They allow multiple
-people to work on a project at the same time! After the work has
+Branches are just different copies of the same project. They allow multiple
+people to work on a project at the same time. After the work has
 been completed on a branch it is then merged back into the main project
-branch (called "preview" for curriculum and called "develop" for
+branch (called "preview" for curriculum and "develop" for
 engineering). After the **preview** or **develop** branch has been made stable
 a course lead or engineer will merge with the **master** branch.
 
-some-change branch --> 
+Example:
+Fix-typo branch --> preview branch --> master branch
 
 <a name="curriculumbranches"></a>
 ###Curriculum Branches
