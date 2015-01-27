@@ -1,6 +1,6 @@
 ##Solving & Preventing Merge Conflicts by [Tatiana Tylosky](https://twitter.com/tatianatylosky)
 
-![](https://octodex.github.com/images/Professortocat_v2.png)
+![](https://octodex.github.com/images/Professortocat_v2.png =200x)
 
 ##Table of Contents
 
