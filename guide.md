@@ -99,14 +99,14 @@ instructions.
 
 2. In your terminal Use git clone and copy paste the SSH URL. You will clone the preview branch by default (which is good). For example, <code>git clone git@github.com:Thinkful-Ed/android.git</code> **NOTE: If you already have the repo cloned on your computer then just use <code>git pull origin preview</code> to make sure your local files are up to date.**
 
-3. Create a new branch and name it appropriately.
+3. Create a new branch (off of the preview branch) and name it appropriately.
    For example, <code>git checkout -b tati-edits</code>
 
 4. Locally make edits to this new branch in the text editor of your
    choosing.
    **NOTE: If you need to make changes to file names you need speak with a course lead. If you are a course lead you need to make sure all other pull request have been merge.**
 
-  As time passes you should do <code>git pull origin preview</code> to get the latest
+  As time passes, other people will have pushed code that changes the preview branch on GitHub, leaving your local version outdated. To fix this, you should do <code>git pull origin preview</code> to get the latest
 updates on the Thinkful preview branch. This will not overwrite your
 local updates.
 
@@ -115,7 +115,7 @@ local updates.
 6. Push your new branch with the changes to the Thinkful repo. For
    example, <code>git push origin tati-edits</code>
 
-7. Go to the github to the Thinkful repository and click the green
+7. Go on github to the Thinkful repository and click the green
    compare and pull request button.
 
 8. By default you are probably comparing the correct branches. Just in case take a look. REMEMBER: You want to compare with preview NOT master. For example, compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Thinkful-Ed/curric..base: tati-edits</code>
@@ -161,7 +161,7 @@ follow the steps in the [merge conflict walkthrough](#walkthrough).
 
 * Name your branches properly.
 
-* Always push to develop/preview not master.
+* Always merge to develop/preview not master.
 
 * Merge early and often.
 
@@ -183,11 +183,11 @@ conflicts.
 
 1. Make Git insert those HEAD tags
 
-  In order to know where exactly you are having merge conflicts you need to follow the set of instructions that Github provides under the "Use the command line" link (see image above).
+  In order to know where exactly you are having merge conflicts you need to follow the set of instructions that Github provides under the "Use the command line" link (see image above) to merge the most recent version of develop/preview into your own branch.
 
 2. Manually find and correct the errors
 
-  Open up your text editor and do a global search for either "HEAD" or ">>>>>>>>>". On sublime this can be done with command-shift-F. This should show you the tags that github put in so that you know where the merge conflicts are occuring.
+  Once a merge conflict has been identified (by the word `CONFLICT` + the file name in your terminal), open up your text editor and do a global search for either "HEAD" or ">>>>>>>>>". On sublime this can be done with command-shift-F. This should show you the tags that github put in so that you know where the merge conflicts are occuring.  From there, you will see two versions of the same code -- your version and that of preview/develop.  You'll need to manually figure out how to reconcile the differences between the two, taking care not to override any changes that your colleagues have made.
 
 3. Add and commit your updated branch
 
@@ -211,11 +211,13 @@ you are ready to revisit those changes in order to commit them use
 
 ####Git diff
 
-Ask Kara
+Running `git diff` in your terminal is a handy way to see exactly what you've changed in a file before you commit it. Generally, lines that were deleted will be shown in red, and lines that were added will be shown in green.  It is good practice to always check the diff of a file before you commit to make sure you haven't overlooked anything or accidentally changed something that you shouldn't have.
+
+GitX is also a handy tool that provides a nice GUI for seeing changes to a file.
 
 ####Reset's?
 
-Ask Kara
+If you do accidentally `add` or `commit` something that you didn't mean to, you can always `reset` the file. `git reset HEAD <filename>` will unstage a file that has been added but not yet committed.  If you accidentally committed something you didn't mean to or that wasn't ready, you can run `git reset --soft HEAD~1` and undo the commit, without losing the changes to the file.
 
 <a name="contribute"></a>
 ###Contribute!
