@@ -215,7 +215,7 @@ Running `git diff` in your terminal is a handy way to see exactly what you've ch
 
 GitX is also a handy tool that provides a nice GUI for seeing changes to a file.
 
-####Reset's?
+####Reset
 
 If you do accidentally `add` or `commit` something that you didn't mean to, you can always `reset` the file. `git reset HEAD <filename>` will unstage a file that has been added but not yet committed.  If you accidentally committed something you didn't mean to or that wasn't ready, you can run `git reset --soft HEAD~1` and undo the commit, without losing the changes to the file.
 
@@ -223,3 +223,8 @@ If you do accidentally `add` or `commit` something that you didn't mean to, you 
 ###Contribute!
 Do you have more suggestions for this TF Guide? Make a Pull Request with
 your new found knowledge and let us update it!
+
+@curric team - Are there any common issues that occur that I've missed?
+
+To add:
+- what to do when unable to add HEAD tags
