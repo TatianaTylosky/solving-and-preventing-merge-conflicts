@@ -29,7 +29,7 @@ Thinkful's curriculum is set up so that multiple contributors can work on
 separate branches that are then merged together by a course lead.
 
 Example:
-Fix-typo branch --> preview branch --> master branch
+courtney-add-android branch --> preview branch --> master branch
 
 Naming convention:
 Please use your name and then a couple words describing what you are
@@ -86,6 +86,9 @@ pencil icon to edit the file.
 
 ![](http://i.imgur.com/TcgzQ4f.png)
 
+After editing the file, save and you will be able to make a pull
+request.
+
 B) Curric writers and TF employees with write access
 
   It is important to pull, commit and merge OFTEN! Everytime you leave
@@ -97,7 +100,7 @@ instructions.
 2. In your terminal Use git clone and copy paste the SSH URL. You will clone the preview branch by default (which is good). For example, <code>git clone git@github.com:Thinkful-Ed/android.git</code> **NOTE: If you already have the repo cloned on your computer then just use <code>git pull origin preview</code> to make sure your local files are up to date.**
 
 3. Create a new branch and name it appropriately.
-   For example, <code>git checkout -B tati-edits</code>
+   For example, <code>git checkout -b tati-edits</code>
 
 4. Locally make edits to this new branch in the text editor of your
    choosing.
@@ -107,7 +110,7 @@ instructions.
 updates on the Thinkful preview branch. This will not overwrite your
 local updates.
 
-5. Do <code>git status</code> in order to see the file you have changed. Then use <code>git add name-of-edited-file</code> to all the files you modified. Then do <code>git commit -m "Informative commit message"</code>.
+5. Do <code>git status</code> in order to see the file you have changed. Then use <code>git add name-of-edited-file</code> to all the files you modified (or use the shortcut <code>git add --all</code> to add all files at once). Then do <code>git commit -m "Informative commit message"</code>.
 
 6. Push your new branch with the changes to the Thinkful repo. For
    example, <code>git push origin tati-edits</code>
@@ -115,9 +118,9 @@ local updates.
 7. Go to the github to the Thinkful repository and click the green
    compare and pull request button.
 
-8. By default you are probably comparing the correct branches. Just in case take a look. REMEMBER: You want Do not compare with Compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Thinkful-Ed/curric..base: tati-edits</code>
+8. By default you are probably comparing the correct branches. Just in case take a look. REMEMBER: You want to compare with preview NOT master. For example, compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Thinkful-Ed/curric..base: tati-edits</code>
 
-9. Check to see if your branch can be automatically merge. If it can
+9. Check to see if your branch can be automatically merged. If it can
    then let a course lead review it! If you have a merge conflicts then
 follow the steps in the [merge conflict walkthrough](#walkthrough).
 
