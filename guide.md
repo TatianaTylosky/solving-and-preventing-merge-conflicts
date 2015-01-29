@@ -15,6 +15,8 @@ The purpose of this overview is to teach you how to make pull requests and solve
   * [Making a Good Pull Request](#pullrequests)
   * [Overview](#overview)
 * [Solving Merge Conflicts](#solving)
+  * [Walkthrough](#walkthrough)
+  * [Magical tricks to use](#tricks)
 
 <a name="TFBranches"></a>
 ##TF Branches
@@ -30,7 +32,11 @@ Example:
 Fix-typo branch --> preview branch --> master branch
 
 Naming convention:
-- Ask Zoe
+Please use your name and then a couple words describing what you are
+doing. For ex:
+
+<code>tati-fix-typo</code>
+<code>courtney-add-android</code>
 
 ![](http://i.imgur.com/bf4hpLn.png)
 
@@ -40,9 +46,6 @@ Thinkful's code base ??? some comment here?
 
 Example:
 feature/python-guide branch --> develop branch --> master branch
-
-Naming convention:
-- Ask Kara
 
 ![](http://i.imgur.com/mJu0BdQ.png)
 
@@ -74,6 +77,55 @@ modified at the same place in the two branches you are trying to merge.
 <a name="pullrequests"></a>
 ### How to make good pull requests
 
+There are three ways that TF currently makes pull requests depending on
+the situation.
+
+A) Quick updates for curriculum for those with write access
+
+  If you see a typo or would like to make a quick change you can do
+this directly on gitub.com. Go to the correct repo and file and edit the
+<code>preview</code> branch directly using Github's editor. Click the
+pencil icon to edit the file.
+
+![](http://i.imgur.com/TcgzQ4f.png)
+
+B) Curric writers and TF employees with write access
+
+  It is important to pull, commit and merge OFTEN! Everytime you leave
+your computer (within reason) you should do ALL of the following
+instructions.
+
+1. Communicate with others and let them know what you are working on.
+
+2. In your terminal Use git clone and copy paste the SSH URL. You will clone the preview branch by default (which is good). For example, <code>git clone git@github.com:Thinkful-Ed/android.git</code> **NOTE: If you already have the repo cloned on your computer then just use <code>git pull origin preview</code> to make sure your local files are up to date.**
+
+3. Create a new branch and name it appropriately.
+   For example, <code>git checkout -B tati-edits</code>
+
+4. Locally make edits to this new branch in the text editor of your
+   choosing.
+   **NOTE: If you need to make changes to file names you need speak with a course lead. If you are a course lead you need to make sure all other pull request have been merge.**
+
+  As time passes you should do <code>git pull origin preview</code> to get the latest
+updates on the Thinkful preview branch. This will not overwrite your
+local updates.
+
+5. Do <code>git status</code> in order to see the file you have changed. Then use <code>git add name-of-edited-file</code> to all the files you modified. Then do <code>git commit -m "Informative commit message"</code>.
+
+6. Push your new branch with the changes to the Thinkful repo. For
+   example, <code>git push origin tati-edits</code>
+
+7. Go to the github to the Thinkful repository and click the green
+   compare and pull request button.
+
+8. By default you are probably comparing the correct branches. Just in case take a look. REMEMBER: You want Do not compare with Compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Thinkful-Ed/curric..base: tati-edits</code>
+
+9. Check to see if your branch can be automatically merge. If it can
+   then let a course lead review it! If you have a merge conflicts then
+follow the steps in the [merge conflict walkthrough](#walkthrough).
+
+B) Contributors without write access (students or mentors)
+
 1. Communicate with others and let them know what you are working on.
 
 2. Fork the repository to your personal github.
@@ -99,7 +151,9 @@ modified at the same place in the two branches you are trying to merge.
 
 9. By default you are probably comparing the correct branches. Just in case take a look. REMEMBER: You want Do not compare with Compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Tatianatylosky..base: master</code>
 
-10. Have your pull request reviewed
+10. Check to see if your branch can be automatically merge. If it can
+   then let a course lead review it! If you have a merge conflicts then
+follow the steps in the [merge conflict walkthrough](#walkthrough).
 
 <a name="overview"></a>
 ###Best Practices Overview
@@ -118,20 +172,53 @@ modified at the same place in the two branches you are trying to merge.
 <a name="solving"></a>
 ##Solving Merge Conflicts
 
-NOTES
-How to fix
-git pull upsteam master
-add upstream
-git remote add upstream ORIGINAL-MASTER
-git fetch upstream (just fetch not merge)
-git branch -a (to see all branches
-git merge upstream/master
-open text editor
-how to find merge conflicts
-git status
-open file
-search for “HEAD”
-after fixed merge conflicts do git add
-after they all fixed git commit -m “Fix merge conflicts”
-git push origin update-branch-name
+<a name="walkthrough"></a>
+###Walkthrough
 
+After you see...
+
+![](http://i.imgur.com/vCkvoEo.png)
+
+here is the general procedure you can follow in order to deal with merge
+conflicts.
+
+1. Make Git insert those HEAD tags
+
+  In order to know where exactly you are having merge conflicts you need to follow the set of instructions that Github provides under the "Use the command line" link (see image above).
+
+2. Manually find and correct the errors
+
+  Open up your text editor and do a global search for either "HEAD" or ">>>>>>>>>". On sublime this can be done with command-shift-F. This should show you the tags that github put in so that you know where the merge conflicts are occuring.
+
+3. Add and commit your updated branch
+
+  <code>git commit -m “Fix merge conflicts”</code>
+
+4. Push your updated branch
+
+  <code>git push origin branch-name</code>
+
+<a name="tricks"></a>
+###Tricks
+
+####Git Stash and Pop
+
+If you are on a branch with uncommited changes and want to temporarily
+switch branches without committing you can with <code>git stash</code>.
+Using <code>git stash</code> will hide those changes from git allowing
+you to either switch branches or commit a different set of changes. Once
+you are ready to revisit those changes in order to commit them use
+<code>git stash pop</code> and they will reappear!
+
+####Git diff
+
+Ask Kara
+
+####Reset's?
+
+Ask Kara
+
+<a name="contribute"></a>
+###Contribute!
+Do you have more suggestions for this TF Guide? Make a Pull Request with
+your new found knowledge and let us update it!
