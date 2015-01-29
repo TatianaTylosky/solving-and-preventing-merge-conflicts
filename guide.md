@@ -78,14 +78,14 @@ modified at the same place in the two branches you are trying to merge.
 
 2. Fork the repository to your personal github.
 
-3. Use git clone and copy paste the SSH URL. You will clone the master branch by defauly.
+3. Use git clone and copy paste the SSH URL. You will clone the master branch by default.
   For example, <code>git clone git@github.com:TatianaTylosky/amaze-curric.git</code>
 
 4. Create a new branch and name it appropriately.
    For example, <code>git checkout -B tati-edits</code>
 
 5. Locally make edits to this new branch.
-   **NOTE: If you need to make changes to file name you need to make sure all other pull request have been merge.**
+   **NOTE: If you need to make changes to file names you need to make sure all other pull request have been merge.**
 
 6. Do <code>git status</code> in order to see the file you have
    changed. Then use <code>git add
@@ -97,12 +97,12 @@ modified at the same place in the two branches you are trying to merge.
 8. Go to your github to your personal forked repository and click the green
    compare and pull request button.
 
-9. Compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Tatianatylosky..base: master</code>
+9. By default you are probably comparing the correct branches. Just in case take a look. REMEMBER: You want Do not compare with Compare <code>base fork: Thinkful-Ed/curric..base: preview</code> to <code>head fork: Tatianatylosky..base: master</code>
 
 10. Have your pull request reviewed
 
 <a name="overview"></a>
-###Overview
+###Best Practices Overview
 
 * Pull/fork before you start working.
 
