@@ -136,8 +136,7 @@ C) Contributors without write access (students or mentors)
 4. Create a new branch and name it appropriately.
    For example, <code>git checkout -B tati-edits</code>
 
-5. Locally make edits to this new branch.
-   **NOTE: If you need to make changes to file names you need to make sure all other pull request have been merge.**
+5. Locally make edits to this new branch. **NOTE: If you already have the repo cloned on your computer then just use <code>git pull origin preview</code> to make sure your local files are up to date.**
 
 6. Do <code>git status</code> in order to see the file you have
    changed. Then use <code>git add
