@@ -35,7 +35,7 @@ Naming convention:
 Please use your name and then a couple words describing what you are
 doing. For ex: <code>tati-fix-typo</code> or <code>courtney-add-android</code>.
 
-![](http://i.imgur.com/bf4hpLn.png)
+![](http://i.imgur.com/igfyEv7.png)
 
 <a name="engbranches"></a>
 ###Eng Branches
