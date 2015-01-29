@@ -33,16 +33,13 @@ Fix-typo branch --> preview branch --> master branch
 
 Naming convention:
 Please use your name and then a couple words describing what you are
-doing. For ex:
-
-<code>tati-fix-typo</code>
-<code>courtney-add-android</code>
+doing. For ex: <code>tati-fix-typo</code> or <code>courtney-add-android</code>.
 
 ![](http://i.imgur.com/bf4hpLn.png)
 
 <a name="engbranches"></a>
 ###Eng Branches
-Thinkful's code base ??? some comment here?
+Thinkful's code base has a similar structure!
 
 Example:
 feature/python-guide branch --> develop branch --> master branch
@@ -124,7 +121,7 @@ local updates.
    then let a course lead review it! If you have a merge conflicts then
 follow the steps in the [merge conflict walkthrough](#walkthrough).
 
-B) Contributors without write access (students or mentors)
+C) Contributors without write access (students or mentors)
 
 1. Communicate with others and let them know what you are working on.
 
