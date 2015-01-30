@@ -226,5 +226,15 @@ your new found knowledge and let us update it!
 
 @curric team - Are there any common issues that occur that I've missed?
 
-To add:
+For Tati (or anyone who wants to contribute) to add:
 - what to do when unable to add HEAD tags
+- how to get rid of changes completely
+- git ply? git pop alternative?
+- git stash list
+- TF specific markdown capabilities for the course app?
+- markdown style info
+- add pulling instructions when you use the fork method
+- ref log
+- git log
+- how to do git diff for comparing two branches
+
