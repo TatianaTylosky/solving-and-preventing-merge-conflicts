@@ -1,9 +1,9 @@
-##Solving & Preventing Merge Conflicts
+## Solving & Preventing Merge Conflicts
 <img src="https://octodex.github.com/images/Professortocat_v2.png" width="200" />
 
 The purpose of this overview is to teach you how to make pull requests and solve merge conflicts for the TF curriculum or code base.
 
-##Table of Contents
+## Table of Contents
 
 * [TF Branches Overview](#TFBranches)
   * [Curric team](#curriculumbranches)
@@ -19,12 +19,12 @@ The purpose of this overview is to teach you how to make pull requests and solve
   * [Magical tricks to use](#tricks)
 
 <a name="TFBranches"></a>
-##TF Branches
+## TF Branches
 Branches are copies of the same project that can exist either on Github
 or locally on your computer. They allow multiple people to work on a project at the same time. After the work has been completed on a branch it is then merged back into the main project branch (called "preview" for curriculum and "develop" for engineering). After the **preview** or **develop** branch has been made stable a course lead or engineer will merge it with the **master** branch.
 
 <a name="curriculumbranches"></a>
-###Curriculum Branches
+### Curriculum Branches
 Thinkful's curriculum is set up so that multiple contributors can work on
 separate branches that are then merged together by a course lead.
 
@@ -38,7 +38,7 @@ doing. For ex: <code>tati-fix-typo</code> or <code>courtney-add-android</code>.
 ![](http://i.imgur.com/igfyEv7.png)
 
 <a name="engbranches"></a>
-###Eng Branches
+### Eng Branches
 Thinkful's code base has a similar structure!
 
 Example:
@@ -47,10 +47,10 @@ feature/python-guide branch --> develop branch --> master branch
 ![](http://i.imgur.com/mJu0BdQ.png)
 
 <a name="mergeconflicts"></a>
-##Merge Conflicts
+## Merge Conflicts
 
 <a name="whatarethey"></a>
-###What is a Merge Conflict?
+### What is a Merge Conflict?
 
 When Github doesn't know how to merge your updated branch with the main branch
 you will get a merge conflict. Usually this means a project has been
@@ -59,7 +59,7 @@ modified at the same place in the two branches you are trying to merge.
 ![](http://i.imgur.com/vCkvoEo.png)
 
 <a name="whymergeconflicts"></a>
-###Why do Merge Conflicts Occur?
+### Why do Merge Conflicts Occur?
 
 1. Someone updated the preview branch by merging new code while you were
    working on your branch
@@ -69,7 +69,7 @@ modified at the same place in the two branches you are trying to merge.
 ***Github is NOT smart enough to know which version you want.***
 
 <a name="prevention"></a>
-##Prevention by Best Practices
+## Prevention by Best Practices
 
 <a name="pullrequests"></a>
 ### How to make good pull requests
@@ -169,10 +169,10 @@ follow the steps in the [merge conflict walkthrough](#walkthrough).
 
 
 <a name="solving"></a>
-##Solving Merge Conflicts
+## Solving Merge Conflicts
 
 <a name="walkthrough"></a>
-###Walkthrough
+### Walkthrough
 
 After you see...
 
@@ -198,9 +198,9 @@ conflicts.
   <code>git push origin branch-name</code>
 
 <a name="tricks"></a>
-###Tricks
+### Tricks
 
-####Git Stash and Pop
+#### Git Stash and Pop
 
 If you are on a branch with uncommited changes and want to temporarily
 switch branches without committing you can with <code>git stash</code>.
@@ -209,18 +209,18 @@ you to either switch branches or commit a different set of changes. Once
 you are ready to revisit those changes in order to commit them use
 <code>git stash pop</code> and they will reappear!
 
-####Git diff
+#### Git diff
 
 Running `git diff` in your terminal is a handy way to see exactly what you've changed in a file before you commit it. Generally, lines that were deleted will be shown in red, and lines that were added will be shown in green.  It is good practice to always check the diff of a file before you commit to make sure you haven't overlooked anything or accidentally changed something that you shouldn't have.
 
 GitX is also a handy tool that provides a nice GUI for seeing changes to a file.
 
-####Reset
+#### Reset
 
 If you do accidentally `add` or `commit` something that you didn't mean to, you can always `reset` the file. `git reset HEAD <filename>` will unstage a file that has been added but not yet committed.  If you accidentally committed something you didn't mean to or that wasn't ready, you can run `git reset --soft HEAD~1` and undo the commit, without losing the changes to the file.
 
 <a name="contribute"></a>
-###Contribute!
+### Contribute!
 Do you have more suggestions for this TF Guide? Make a Pull Request with
 your new found knowledge and let us update it!
 
